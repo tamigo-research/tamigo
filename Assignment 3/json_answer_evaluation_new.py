@@ -42,7 +42,7 @@ def evaluate_answer(question, student_answer, model_answer, VectorStore):
  
 def main():
     # upload PDF files to be included for context
-    pdfs = {'Assignemt': 'W24 CSE530 DSCD Assignment 3 - For Evaluation using LLMs.pdf', 'Map Reduce for K-Means Algorithm': 'MapReduce for K-Means Clustering.pdf'}
+    pdfs = {'Assignemt': 'assignment3.pdf', 'Map Reduce for K-Means Algorithm': 'MapReduce for K-Means Clustering.pdf'}
     sup_text = ""
 
     for key, value in pdfs.items():

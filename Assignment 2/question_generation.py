@@ -28,19 +28,7 @@ def split(question_answer:str):
     answer=question_answer[ind_questionmark+1:]
     return question,answer
 
-# def read_pdf(pdf_path):
-#     # Open the PDF file
-#     with open(pdf_path, 'rb') as file:
-#         # Create a PDF reader object
-#         pdf_reader = PyPDF2.PdfReader(file)
-        
-#         # Read each page of the PDF
-#         text = ''
-#         for page_num in range(len(pdf_reader.pages)):
-#             page = pdf_reader.pages[page_num]
-#             text += page.extract_text()
-        
-#         return text
+
 def read_pdf(pdf_path):
     # Open the PDF file
     with open(pdf_path, 'rb') as file:
@@ -61,14 +49,6 @@ def read_multiple_pdfs(pdf_paths):
         text = read_pdf(pdf_path)
         all_texts.append(text)
     return all_texts
-
-
-    
-
-
-
-
-    return grade
 
 def format_query(query:str):
     l=query.split(', ')

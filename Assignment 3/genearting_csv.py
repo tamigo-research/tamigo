@@ -188,9 +188,6 @@ def generate_csv_code_eval(dir_names_TA):
         for data in flattened_list:
             writer.writerow(data)
     print(f"Data has been successfully written to {csv_file_name}")
-        
-
-     
 
 
 n=int(input("The Number of TA's: "))

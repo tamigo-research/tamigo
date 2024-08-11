@@ -73,10 +73,6 @@ def write_to_file(question, evaluation_response, summarization_response, output_
         Functionality Tag = {question['functionality_tag']}\n
         ''')
         output_file.write(intro_text)
-        # output_file.write(wrapper.fill(separator) + "\n")
-        # output_file.write(wrapper.fill(separator) + "\n")
-        # output_file.write(wrapper.fill(f'Functionality Id = {question["functionality_id"]}') + "\n")
-        # output_file.write(wrapper.fill(f'Functionality Tag = {question["functionality_tag"]}') + "\n")
 
         lines = question['question'].split("\n")
         for line in lines:
@@ -132,7 +128,7 @@ def main():
 
     with open(rubric,"r") as fd:
         data=json.load(fd)
-    pdfs = {'Assignemt': 'W24 CSE530 DSCD Assignment 3 - For Evaluation using LLMs.pdf', 'Map Reduce for K-Means Algorithm': 'MapReduce for K-Means Clustering.pdf'}
+    pdfs = {'Assignemt': 'assignment3.pdf', 'Map Reduce for K-Means Algorithm': 'MapReduce for K-Means Clustering.pdf'}
 
     sup_text = ""
 
